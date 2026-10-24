@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#143674"/><stop offset="1" stop-color="#0b2351"/></linearGradient>
+  <radialGradient id="glow" cx=".5" cy=".45" r=".5"><stop offset="0" stop-color="#3f86e6" stop-opacity=".38"/><stop offset="1" stop-color="#3f86e6" stop-opacity="0"/></radialGradient>
+  <linearGradient id="enamel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#eef3fa"/><stop offset="1" stop-color="#c9d6e8"/></linearGradient>
+  <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7cc0ff"/><stop offset=".5" stop-color="#1f6fd1"/><stop offset="1" stop-color="#0d3f93"/></linearGradient>
+  <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1f4f8"/><stop offset=".45" stop-color="#9aa6b6"/><stop offset="1" stop-color="#5d6877"/></linearGradient>
+  <linearGradient id="gum" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4b9c0"/><stop offset="1" stop-color="#d98c98"/></linearGradient>
+  <radialGradient id="shadow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#000" stop-opacity=".35"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+
+</defs>
+<rect width="480" height="360" fill="url(#bg)"/>
+<rect width="480" height="360" fill="url(#glow)"/>
+<circle cx="240" cy="176" r="138" fill="none" stroke="#fff" stroke-opacity=".12"/>
+<circle cx="240" cy="176" r="104" fill="none" stroke="#fff" stroke-opacity=".07"/>
+<ellipse cx="240" cy="318" rx="80" ry="8" fill="url(#shadow)"/>
+<g transform="translate(240 108) scale(1.05)">
+  <path d="M-62,-8 C-70,-44 -46,-70 -20,-64 C-8,-61 8,-61 20,-64 C46,-70 70,-44 62,-8 C58,16 50,34 36,36 C24,38 20,22 0,22 C-20,22 -24,38 -36,36 C-50,34 -58,16 -62,-8 Z" fill="url(#enamel)" stroke="url(#rim)" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M-34,-40 C-22,-50 -8,-46 0,-40" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-opacity=".85"/>
+</g>
+<g transform="translate(240 178)">
+  <path d="M-28,-6 L28,-6 L20,26 L-20,26 Z" fill="url(#metal)" stroke="#dfe6ef" stroke-width="1.5"/>
+  <rect x="-24" y="26" width="48" height="8" rx="3" fill="url(#metal)"/>
+  <path d="M-17,38 L17,38 L14,112 Q0,124 -14,112 Z" fill="url(#metal)" stroke="#dfe6ef" stroke-width="1.5"/>
+  <g transform="translate(0 30)"><path d="M-17,8 L17,14" stroke="#4b5666" stroke-width="3" stroke-linecap="round" stroke-opacity=".75"/><path d="M-17,20 L17,26" stroke="#4b5666" stroke-width="3" stroke-linecap="round" stroke-opacity=".75"/><path d="M-17,32 L17,38" stroke="#4b5666" stroke-width="3" stroke-linecap="round" stroke-opacity=".75"/><path d="M-17,44 L17,50" stroke="#4b5666" stroke-width="3" stroke-linecap="round" stroke-opacity=".75"/><path d="M-17,56 L17,62" stroke="#4b5666" stroke-width="3" stroke-linecap="round" stroke-opacity=".75"/><path d="M-17,68 L17,74" stroke="#4b5666" stroke-width="3" stroke-linecap="round" stroke-opacity=".75"/><path d="M-17,80 L17,86" stroke="#4b5666" stroke-width="3" stroke-linecap="round" stroke-opacity=".75"/></g>
+</g>
+<path d="M150 232 h40 M290 232 h40" stroke="#7cc0ff" stroke-opacity=".45" stroke-width="2" stroke-dasharray="3 6" stroke-linecap="round"/>
+</svg>

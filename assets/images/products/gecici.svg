@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#143674"/><stop offset="1" stop-color="#0b2351"/></linearGradient>
+  <radialGradient id="glow" cx=".5" cy=".45" r=".5"><stop offset="0" stop-color="#3f86e6" stop-opacity=".38"/><stop offset="1" stop-color="#3f86e6" stop-opacity="0"/></radialGradient>
+  <linearGradient id="enamel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#eef3fa"/><stop offset="1" stop-color="#c9d6e8"/></linearGradient>
+  <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7cc0ff"/><stop offset=".5" stop-color="#1f6fd1"/><stop offset="1" stop-color="#0d3f93"/></linearGradient>
+  <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1f4f8"/><stop offset=".45" stop-color="#9aa6b6"/><stop offset="1" stop-color="#5d6877"/></linearGradient>
+  <linearGradient id="gum" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4b9c0"/><stop offset="1" stop-color="#d98c98"/></linearGradient>
+  <radialGradient id="shadow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#000" stop-opacity=".35"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+
+</defs>
+<rect width="480" height="360" fill="url(#bg)"/>
+<rect width="480" height="360" fill="url(#glow)"/>
+<circle cx="240" cy="176" r="138" fill="none" stroke="#fff" stroke-opacity=".12"/>
+<circle cx="240" cy="176" r="104" fill="none" stroke="#fff" stroke-opacity=".07"/>
+<ellipse cx="240" cy="296" rx="62" ry="8" fill="url(#shadow)"/>
+<g transform="translate(240 168) scale(1.6)">
+  <path d="M-34,-72 C-52,-60 -50,-20 -40,10 C-32,34 -20,60 -10,82 C-4,92 4,92 10,82 C20,60 32,34 40,10 C50,-20 52,-60 34,-72 C14,-80 -14,-80 -34,-72 Z" fill="#ffffff" fill-opacity=".16" stroke="#cfe3ff" stroke-width="3.5" stroke-dasharray="9 7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M-30,-54 C-38,-30 -34,-4 -28,14" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="4" stroke-linecap="round"/>
+</g>
+<g transform="translate(352 104)" fill="none" stroke="#9ec2f4" stroke-width="3" stroke-linecap="round"><circle r="22" fill="#0b2351" fill-opacity=".6"/><path d="M0-12v12l8 6"/></g>
+</svg>

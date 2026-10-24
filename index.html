@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SeoDental | Dijital Diş Protez Laboratuvarı</title>
+  <meta name="description" content="SeoDental, en güncel CAD/CAM teknolojileriyle hassasiyetle üretilen ve güvenle teslim edilen diş protezleri sunan dijital diş protez laboratuvarıdır.">
+  <meta name="theme-color" content="#0b2351">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Inline SVG icon sprite (referenced with <use href="#icon-...">) -->
+  <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="icon-login" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="m10 17 5-5-5-5"/><path d="M15 12H3"/></symbol>
+    <symbol id="icon-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 21h8M12 16v5"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.2 7.8 8 9 4.8-1.2 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="icon-timer" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M10 2h4"/></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14a6.5 6.5 0 0 1 3.5 6"/></symbol>
+    <symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="icon-eye-off" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M3 3l18 18"/></symbol>
+    <symbol id="icon-cube" viewBox="0 0 24 24"><path d="M12 3 4 7.5v9L12 21l8-4.5v-9z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/></symbol>
+    <symbol id="icon-scan" viewBox="0 0 24 24"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2M4 12h16"/></symbol>
+    <symbol id="icon-cog" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.5"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/></symbol>
+    <symbol id="icon-clipboard" viewBox="0 0 24 24"><path d="M9 4h6v3H9z"/><path d="M7 5.5H6a2 2 0 0 0-2 2V20a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5a2 2 0 0 0-2-2h-1"/><path d="m8.5 14 2.5 2.5L16 11.5"/></symbol>
+    <symbol id="icon-upload" viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 20h16"/></symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+    <symbol id="icon-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></symbol>
+    <symbol id="icon-package" viewBox="0 0 24 24"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="icon-trend" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#icerik">İçeriğe geç</a>
+
+  <header class="site-header" id="site-header">
+
+    <!-- Top information bar. Placeholder values: see README ("Replacing placeholder details"). -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <p class="topbar__item">
+          <svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg>
+          <span>Çalışma saatleri: [Pzt – Cmt 09:00 – 18:00]</span>
+        </p>
+        <ul class="topbar__contacts">
+          <li>
+            <a class="topbar__item topbar__link" href="mailto:info@example.com" data-contact-email>
+              <svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg>
+              <span>info@[alanadiniz].com</span>
+            </a>
+          </li>
+          <li>
+            <a class="topbar__item topbar__link" href="tel:+900000000000">
+              <svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>
+              <span>[+90&nbsp;900&nbsp;000&nbsp;00&nbsp;00]</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main navigation bar -->
+    <div class="navbar" id="navbar">
+      <div class="container navbar__inner">
+        <a class="brand" href="#ana-sayfa" aria-label="SeoDental – ana sayfa">
+          <img class="brand__logo" src="assets/images/seodental-logo.png" alt="SeoDental" width="1107" height="800">
+        </a>
+
+        <nav class="nav" id="site-nav" aria-label="Ana menü">
+          <ul class="nav__list">
+            <li><a class="nav__link is-active" href="#ana-sayfa" aria-current="true">Ana Sayfa</a></li>
+            <li><a class="nav__link" href="#kurumsal">Kurumsal</a></li>
+            <li><a class="nav__link" href="#urunlerimiz">Ürünlerimiz</a></li>
+            <li><a class="nav__link" href="#teknoloji">Teknoloji</a></li>
+            <li><a class="nav__link" href="#iletisim">İletişim</a></li>
+          </ul>
+        </nav>
+
+        <div class="navbar__actions">
+          <button class="btn btn--dark btn--sm" type="button" id="auth-button" data-dialog-open="login-dialog" aria-haspopup="dialog">
+            <svg class="icon" aria-hidden="true"><use href="#icon-login"/></svg>
+            <span class="btn__label" id="auth-button-label">Online Sipariş Girişi</span>
+          </button>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç">
+            <span class="nav-toggle__bar" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="icerik" tabindex="-1">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="ana-sayfa" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__grid">
+
+          <div class="hero__content">
+            <p class="eyebrow">Dijital Diş Protez Laboratuvarı</p>
+            <h1 class="hero__title" id="hero-title">Hassasiyetle üretilen, güvenle teslim edilen protezler.</h1>
+            <p class="hero__text">Bilim ve sanatın el ele ortaya çıkardığı ürünleri, en güncel CAD/CAM teknolojileriyle diş hekimlerimize ve teknisyenlerimize sunuyoruz.</p>
+            <div class="hero__actions">
+              <a class="btn btn--light" href="#urunlerimiz">Ürünlerimizi İnceleyin</a>
+              <a class="btn btn--outline" href="#iletisim" data-quote>Teklif Alın</a>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="hero__ring">
+              <img class="hero__image" src="assets/images/tooth-emblem.png" alt="SeoDental üç boyutlu diş amblemi" width="716" height="612">
+            </div>
+          </div>
+
+        </div>
+
+        <ul class="features" aria-label="Öne çıkan özelliklerimiz">
+          <li class="feature">
+            <svg class="icon feature__icon" aria-hidden="true"><use href="#icon-monitor"/></svg>
+            <span class="feature__label">Dijital İş Akışı</span>
+          </li>
+          <li class="feature">
+            <svg class="icon feature__icon" aria-hidden="true"><use href="#icon-shield"/></svg>
+            <span class="feature__label">Hijyenik Üretim</span>
+          </li>
+          <li class="feature">
+            <svg class="icon feature__icon" aria-hidden="true"><use href="#icon-timer"/></svg>
+            <span class="feature__label">Zamanında Teslim</span>
+          </li>
+          <li class="feature">
+            <svg class="icon feature__icon" aria-hidden="true"><use href="#icon-users"/></svg>
+            <span class="feature__label">Uzman Kadro</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== KURUMSAL ===================== -->
+    <section class="section section--light" id="kurumsal" data-spy="kurumsal" aria-labelledby="kurumsal-title">
+      <div class="container">
+        <div class="about">
+          <div class="about__text">
+            <p class="eyebrow eyebrow--light">Kurumsal</p>
+            <h2 class="section-title" id="kurumsal-title">Bilimi ve sanatı dijital hassasiyetle buluşturan laboratuvar</h2>
+            <p class="lead">SeoDental, diş hekimlerine ve diş teknisyenlerine hizmet veren dijital bir diş protez laboratuvarıdır. Her vakayı, hekimin klinik planına sadık kalarak; planlama, tasarım, üretim ve kontrol aşamalarından geçen düzenli bir süreçle ele almayı hedefler.</p>
+            <p>Yaklaşımımızın merkezinde hassasiyet, güvenilirlik ve zamanında teslim yer alır. Dijital iş akışları sayesinde vaka bilgileri düzenli biçimde takip edilir; üretim süreci açık ve anlaşılır bir iletişimle desteklenir.</p>
+
+            <div class="callout">
+              <svg class="icon callout__icon" aria-hidden="true"><use href="#icon-users"/></svg>
+              <div>
+                <h3 class="callout__title">Hekim ve teknisyenlerle iş birliği</h3>
+                <p>İyi bir restorasyon, klinik ile laboratuvar arasındaki net iletişimle başlar. Hekimin beklentilerini, vaka notlarını ve estetik tercihlerini sürecin başından itibaren birlikte değerlendirmeyi; sorulara hızlı ve anlaşılır biçimde yanıt vermeyi önemsiyoruz.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__visual" aria-hidden="true">
+            <div class="about__ring">
+              <img src="assets/images/tooth-emblem.png" alt="" width="716" height="612" loading="lazy">
+            </div>
+            <ul class="tag-list">
+              <li>CAD/CAM</li>
+              <li>Dijital İş Akışı</li>
+              <li>Kalite Kontrol</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mission-vision">
+          <article class="mv-card">
+            <svg class="icon mv-card__icon" aria-hidden="true"><use href="#icon-target"/></svg>
+            <h3 class="mv-card__title">Misyonumuz</h3>
+            <p>Diş hekimlerine ve teknisyenlerine, güncel dijital teknolojilerle hazırlanan, hassas ve güvenilir protez çözümlerini zamanında ulaştırmak.</p>
+          </article>
+          <article class="mv-card">
+            <svg class="icon mv-card__icon" aria-hidden="true"><use href="#icon-eye"/></svg>
+            <h3 class="mv-card__title">Vizyonumuz</h3>
+            <p>Kalite, şeffaf iletişim ve sürekli gelişim anlayışıyla, hekimlerin ve teknisyenlerin tercih ettiği güvenilir bir dijital protez laboratuvarı olmak.</p>
+          </article>
+        </div>
+
+        <h3 class="subhead">Değerlerimiz</h3>
+        <ul class="values">
+          <li class="value">
+            <svg class="icon value__icon" aria-hidden="true"><use href="#icon-target"/></svg>
+            <h4 class="value__title">Hassasiyet</h4>
+            <p>Ölçü, form ve uyum detaylarına her aşamada dikkat eden titiz bir çalışma anlayışı.</p>
+          </li>
+          <li class="value">
+            <svg class="icon value__icon" aria-hidden="true"><use href="#icon-shield"/></svg>
+            <h4 class="value__title">Güvenilirlik</h4>
+            <p>Tutarlı süreçler ve açık iletişimle, hekimlerin güvenebileceği bir iş birliği.</p>
+          </li>
+          <li class="value">
+            <svg class="icon value__icon" aria-hidden="true"><use href="#icon-timer"/></svg>
+            <h4 class="value__title">Zamanında Teslim</h4>
+            <p>Planlı bir üretim akışı ve teslim takvimine gösterilen özen.</p>
+          </li>
+          <li class="value">
+            <svg class="icon value__icon" aria-hidden="true"><use href="#icon-check"/></svg>
+            <h4 class="value__title">Hijyen ve Düzen</h4>
+            <p>Temiz, düzenli ve izlenebilir bir çalışma ortamı anlayışı.</p>
+          </li>
+          <li class="value">
+            <svg class="icon value__icon" aria-hidden="true"><use href="#icon-users"/></svg>
+            <h4 class="value__title">İş Birliği</h4>
+            <p>Hekim ve teknisyenlerle birlikte çözüm üreten, dinleyen bir yaklaşım.</p>
+          </li>
+          <li class="value">
+            <svg class="icon value__icon" aria-hidden="true"><use href="#icon-trend"/></svg>
+            <h4 class="value__title">Sürekli Gelişim</h4>
+            <p>Teknolojiyi ve süreçleri düzenli olarak gözden geçirme isteği.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== NEDEN BİZ ===================== -->
+    <section class="section section--dark" id="neden-biz" data-spy="kurumsal" aria-labelledby="neden-biz-title">
+      <div class="container why">
+        <div class="why__intro">
+          <p class="eyebrow">Neden Biz?</p>
+          <h2 class="section-title section-title--invert" id="neden-biz-title">Hekimlerin işini kolaylaştıran bir çalışma anlayışı</h2>
+          <p class="lead lead--invert">Laboratuvar seçiminde kalite kadar iletişim ve düzen de önemlidir. Çalışma biçimimizi bu altı başlık etrafında şekillendiriyoruz.</p>
+          <a class="btn btn--light btn--lg" href="#iletisim" data-quote>Teklif Alın</a>
+        </div>
+
+        <ul class="why__list">
+          <li class="why__item">
+            <svg class="icon why__icon" aria-hidden="true"><use href="#icon-target"/></svg>
+            <div>
+              <h3 class="why__title">Hassasiyet odaklı üretim</h3>
+              <p>Vaka notlarındaki ölçü ve form beklentileri üretimin her aşamasında göz önünde tutulur.</p>
+            </div>
+          </li>
+          <li class="why__item">
+            <svg class="icon why__icon" aria-hidden="true"><use href="#icon-monitor"/></svg>
+            <div>
+              <h3 class="why__title">Dijital iş akışı</h3>
+              <p>Dijital ölçü ve vaka verileriyle çalışmaya uygun, düzenli bir süreç yapısı.</p>
+            </div>
+          </li>
+          <li class="why__item">
+            <svg class="icon why__icon" aria-hidden="true"><use href="#icon-clipboard"/></svg>
+            <div>
+              <h3 class="why__title">Kalite kontrol</h3>
+              <p>Teslimden önce çalışmanın form, uyum ve vaka notları açısından gözden geçirilmesi.</p>
+            </div>
+          </li>
+          <li class="why__item">
+            <svg class="icon why__icon" aria-hidden="true"><use href="#icon-chat" /></svg>
+            <div>
+              <h3 class="why__title">Güvenilir iletişim</h3>
+              <p>Sorular ve onay noktaları için açık, zamanında ve anlaşılır bilgilendirme.</p>
+            </div>
+          </li>
+          <li class="why__item">
+            <svg class="icon why__icon" aria-hidden="true"><use href="#icon-calendar"/></svg>
+            <div>
+              <h3 class="why__title">Teslim takvimine özen</h3>
+              <p>Planlı üretim akışıyla hekimin randevu takvimini dikkate alan bir yaklaşım.</p>
+            </div>
+          </li>
+          <li class="why__item">
+            <svg class="icon why__icon" aria-hidden="true"><use href="#icon-users"/></svg>
+            <div>
+              <h3 class="why__title">Profesyonellerle iş birliği</h3>
+              <p>Diş hekimleri ve teknisyenlerle birlikte, çözüm odaklı bir çalışma biçimi.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== ÜRÜNLERİMİZ ===================== -->
+    <section class="section section--soft" id="urunlerimiz" data-spy="urunlerimiz" aria-labelledby="urunler-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow eyebrow--light">Ürünlerimiz</p>
+          <h2 class="section-title" id="urunler-title">Hizmet kategorilerimiz</h2>
+          <p class="lead">Diş hekimlerinin ve teknisyenlerin ihtiyaç duyabileceği başlıca protez ve restorasyon kategorileri. Her kategori için ayrıntıları inceleyebilir, vakanıza özel teklif isteyebilirsiniz.</p>
+        </div>
+
+        <div class="products">
+
+          <article class="product-card" id="urun-zirkonyum" data-product="zirkonyum">
+            <div class="product-card__media">
+              <img src="assets/images/products/zirkonyum.svg" alt="Zirkonyum restorasyon temsili çizimi" width="480" height="360" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Zirkonyum Restorasyonlar</h3>
+              <p>Dijital tasarım ve CAD/CAM üretim akışına uygun zirkonyum malzemeyle hazırlanan kuron ve köprü çözümleri.</p>
+              <button class="btn btn--ghost btn--sm" type="button" data-product-open aria-haspopup="dialog">Detayları İncele</button>
+            </div>
+            <template data-product-detail>
+              <p>Zirkonyum restorasyonlar, dijital tasarım ve frezeleme tabanlı iş akışlarıyla birlikte sıkça anılan bir malzeme grubunu kapsar. Vaka formunda belirtilen restorasyon tipi, renk ve form beklentileri doğrultusunda planlanır.</p>
+              <ul class="check-list">
+                <li>Tek üye kuron ve köprü gibi farklı restorasyon tipleri için planlanabilir.</li>
+                <li>Dijital tasarım ve CAD/CAM üretim akışıyla uyumlu çalışır.</li>
+                <li>Renk, form ve temas noktaları vaka notlarına göre ele alınır.</li>
+              </ul>
+            </template>
+          </article>
+
+          <article class="product-card" id="urun-emax" data-product="emax">
+            <div class="product-card__media">
+              <img src="assets/images/products/emax.svg" alt="E-max restorasyon temsili çizimi" width="480" height="360" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">E-max Restorasyonlar</h3>
+              <p>Estetik beklentilerin öne çıktığı vakalar için cam seramik esaslı restorasyon seçenekleri.</p>
+              <button class="btn btn--ghost btn--sm" type="button" data-product-open aria-haspopup="dialog">Detayları İncele</button>
+            </div>
+            <template data-product-detail>
+              <p>E-max, estetik odaklı çalışmalarda değerlendirilen cam seramik esaslı bir malzeme grubudur. Renk ve saydamlık gibi beklentiler, vakanın başında hekimle birlikte netleştirilir.</p>
+              <ul class="check-list">
+                <li>Kuron, laminate, inley ve onley gibi farklı restorasyon tipleri için değerlendirilebilir.</li>
+                <li>Renk ve saydamlık beklentileri vaka notlarına göre belirlenir.</li>
+                <li>Uygun restorasyon tipi ve malzeme seçimi hekimin kararına bağlıdır.</li>
+              </ul>
+            </template>
+          </article>
+
+          <article class="product-card" id="urun-metal-porselen" data-product="metal-porselen">
+            <div class="product-card__media">
+              <img src="assets/images/products/metal-porselen.svg" alt="Metal destekli porselen restorasyon temsili çizimi" width="480" height="360" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Metal Destekli Porselen Restorasyonlar</h3>
+              <p>Metal alt yapı ile porselen kaplamanın birleştiği, klasik ve yaygın bilinen restorasyon türü.</p>
+              <button class="btn btn--ghost btn--sm" type="button" data-product-open aria-haspopup="dialog">Detayları İncele</button>
+            </div>
+            <template data-product-detail>
+              <p>Metal destekli porselen restorasyonlar, bir metal alt yapı üzerine porselen uygulanarak hazırlanır. Alt yapı ve porselen tasarımı vakanın planına göre belirlenir.</p>
+              <ul class="check-list">
+                <li>Kuron ve köprü çalışmalarında kullanılabilir.</li>
+                <li>Alt yapı ve kaplama tasarımı vaka notlarıyla birlikte planlanır.</li>
+                <li>Renk ve form beklentileri hekimle netleştirilir.</li>
+              </ul>
+            </template>
+          </article>
+
+          <article class="product-card" id="urun-implant" data-product="implant">
+            <div class="product-card__media">
+              <img src="assets/images/products/implant.svg" alt="İmplant üstü protez temsili çizimi" width="480" height="360" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">İmplant Üstü Protezler</h3>
+              <p>İmplant üzerine planlanan tek üye veya çok üyeli protetik restorasyonlar için laboratuvar çözümleri.</p>
+              <button class="btn btn--ghost btn--sm" type="button" data-product-open aria-haspopup="dialog">Detayları İncele</button>
+            </div>
+            <template data-product-detail>
+              <p>İmplant üstü çalışmalarda protetik planlama, kullanılan implant sistemi ve hekimin tercih ettiği bağlantı biçimiyle birlikte ele alınır.</p>
+              <ul class="check-list">
+                <li>Tek üye ve çok üyeli çalışmalar için planlanabilir.</li>
+                <li>İmplant sistemi ve bileşen bilgileri vaka formunda paylaşılır.</li>
+                <li>Bağlantı ve tutuculuk seçenekleri hekimle birlikte değerlendirilir.</li>
+              </ul>
+            </template>
+          </article>
+
+          <article class="product-card" id="urun-hareketli-protez" data-product="hareketli-protez">
+            <div class="product-card__media">
+              <img src="assets/images/products/hareketli-protez.svg" alt="Hareketli protez temsili çizimi" width="480" height="360" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Hareketli Protezler</h3>
+              <p>Kısmi veya tam dişsizlik durumlarında kullanılan, hekimin planına göre hazırlanan hareketli protez çalışmaları.</p>
+              <button class="btn btn--ghost btn--sm" type="button" data-product-open aria-haspopup="dialog">Detayları İncele</button>
+            </div>
+            <template data-product-detail>
+              <p>Hareketli protezler, hekimin ölçü, çene ilişkisi ve diş dizimi bilgilerine dayanarak hazırlanır. Prova ve kontrol aşamaları klinikle birlikte yürütülür.</p>
+              <ul class="check-list">
+                <li>Kısmi ve tam protez çalışmaları için planlanabilir.</li>
+                <li>Ölçü ve çene ilişkisi bilgileri hekimle birlikte netleştirilir.</li>
+                <li>Prova aşamaları hekimin planına göre ilerler.</li>
+              </ul>
+            </template>
+          </article>
+
+          <article class="product-card" id="urun-gecici" data-product="gecici">
+            <div class="product-card__media">
+              <img src="assets/images/products/gecici.svg" alt="Geçici restorasyon temsili çizimi" width="480" height="360" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Geçici Restorasyonlar</h3>
+              <p>Kalıcı restorasyon süreci boyunca kullanılabilecek, form ve estetik açıdan planlanan geçici çözümler.</p>
+              <button class="btn btn--ghost btn--sm" type="button" data-product-open aria-haspopup="dialog">Detayları İncele</button>
+            </div>
+            <template data-product-detail>
+              <p>Geçici restorasyonlar, kalıcı çalışma hazırlanırken kullanılmak üzere planlanır. Form ve renk bilgileri vaka notlarına göre belirlenir.</p>
+              <ul class="check-list">
+                <li>Kalıcı restorasyon sürecinde kullanılmak üzere hazırlanabilir.</li>
+                <li>Form ve renk beklentileri vaka notlarına göre ele alınır.</li>
+                <li>Kullanım süresi ve koşulları diş hekiminin kararına bağlıdır.</li>
+              </ul>
+            </template>
+          </article>
+
+        </div>
+
+        <div class="cta-band">
+          <div>
+            <h3 class="cta-band__title">Vakanıza uygun çözümü birlikte planlayalım</h3>
+            <p>Kategori seçimi ve uygunluk, diş hekiminin klinik değerlendirmesine bağlıdır. Fiyat ve süre bilgisi vaka ayrıntılarına göre ayrıca paylaşılır.</p>
+          </div>
+          <a class="btn btn--dark btn--lg" href="#iletisim" data-quote>Teklif Alın</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TEKNOLOJİ ===================== -->
+    <section class="section section--dark" id="teknoloji" data-spy="teknoloji" aria-labelledby="teknoloji-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Teknoloji</p>
+          <h2 class="section-title section-title--invert" id="teknoloji-title">Dijital protez üretiminin temel adımları</h2>
+          <p class="lead lead--invert">Modern bir dijital protez laboratuvarında vaka; veriden tasarıma, tasarımdan üretime ve kontrole kadar bütünleşik bir iş akışıyla ilerler.</p>
+        </div>
+
+        <ul class="tech-grid">
+          <li class="tech-card">
+            <svg class="icon tech-card__icon" aria-hidden="true"><use href="#icon-cube"/></svg>
+            <h3 class="tech-card__title">CAD/CAM tasarım ve üretim</h3>
+            <p>Restorasyonlar bilgisayar destekli yazılımlarla dijital ortamda tasarlanır, ardından üretim aşamasına hazırlanır.</p>
+          </li>
+          <li class="tech-card">
+            <svg class="icon tech-card__icon" aria-hidden="true"><use href="#icon-upload"/></svg>
+            <h3 class="tech-card__title">Dijital ölçü ve vaka verisi</h3>
+            <p>Ağız içi tarama ile alınan dijital ölçüler ve vaka bilgileri, yaygın dosya formatlarında laboratuvara iletilebilir.</p>
+          </li>
+          <li class="tech-card">
+            <svg class="icon tech-card__icon" aria-hidden="true"><use href="#icon-scan"/></svg>
+            <h3 class="tech-card__title">3B tarama ve modelleme</h3>
+            <p>Fiziksel ölçüler gerektiğinde taranarak dijital modele dönüştürülür; tasarım çalışması bu model üzerinde yürütülür.</p>
+          </li>
+          <li class="tech-card">
+            <svg class="icon tech-card__icon" aria-hidden="true"><use href="#icon-cog"/></svg>
+            <h3 class="tech-card__title">Hassasiyet odaklı üretim</h3>
+            <p>Üretim adımları, tasarlanan formun doğru ve tekrarlanabilir biçimde hayata geçirilmesine odaklanır.</p>
+          </li>
+          <li class="tech-card">
+            <svg class="icon tech-card__icon" aria-hidden="true"><use href="#icon-clipboard"/></svg>
+            <h3 class="tech-card__title">Kalite kontrol</h3>
+            <p>Teslimden önce çalışma; form, uyum ve vaka notları doğrultusunda kontrol adımlarından geçirilir.</p>
+          </li>
+          <li class="tech-card">
+            <svg class="icon tech-card__icon" aria-hidden="true"><use href="#icon-chat"/></svg>
+            <h3 class="tech-card__title">Klinikle iletişim ve dosya paylaşımı</h3>
+            <p>Sorular, tasarım onayları ve dosya alışverişi klinikle düzenli iletişim içinde yürütülür.</p>
+          </li>
+        </ul>
+
+        <div class="pipeline" role="group" aria-labelledby="pipeline-title">
+          <h3 class="pipeline__title" id="pipeline-title">Tipik dijital iş akışı</h3>
+          <ol class="pipeline__steps">
+            <li class="pipeline__step">
+              <span class="pipeline__node"><svg class="icon" aria-hidden="true"><use href="#icon-upload"/></svg></span>
+              <span class="pipeline__label">Dijital vaka gönderimi</span>
+            </li>
+            <li class="pipeline__step">
+              <span class="pipeline__node"><svg class="icon" aria-hidden="true"><use href="#icon-cube"/></svg></span>
+              <span class="pipeline__label">Tasarım ve planlama</span>
+            </li>
+            <li class="pipeline__step">
+              <span class="pipeline__node"><svg class="icon" aria-hidden="true"><use href="#icon-cog"/></svg></span>
+              <span class="pipeline__label">Üretim</span>
+            </li>
+            <li class="pipeline__step">
+              <span class="pipeline__node"><svg class="icon" aria-hidden="true"><use href="#icon-clipboard"/></svg></span>
+              <span class="pipeline__label">Kalite kontrol</span>
+            </li>
+            <li class="pipeline__step">
+              <span class="pipeline__node"><svg class="icon" aria-hidden="true"><use href="#icon-truck"/></svg></span>
+              <span class="pipeline__label">Kliniğe teslimat</span>
+            </li>
+          </ol>
+          <p class="pipeline__note">Bu akış, dijital protez çalışmalarında tipik olarak izlenen genel adımları gösterir; vakanın türüne göre değişebilir.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== İŞ AKIŞI ===================== -->
+    <section class="section section--light" id="is-akisi" data-spy="teknoloji" aria-labelledby="is-akisi-title">
+      <div class="container process">
+        <div class="process__intro">
+          <p class="eyebrow eyebrow--light">İş Akışı</p>
+          <h2 class="section-title" id="is-akisi-title">Bizimle çalışmak nasıl ilerler?</h2>
+          <p class="lead">Bir hekimin veya kliniğin laboratuvarla çalışırken tipik olarak izleyeceği adımlar aşağıda özetlenmiştir.</p>
+          <p class="note">Bu, önerilen genel bir iş akışıdır. Vakanın türüne göre adımlar ve süreler değişebilir; kesin süreç için bizimle iletişime geçin.</p>
+          <a class="btn btn--dark btn--lg" href="#iletisim" data-quote>Teklif Alın</a>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__step">
+            <span class="timeline__num" aria-hidden="true">1</span>
+            <div class="timeline__body">
+              <h3 class="timeline__title">Vaka gönderimi <span class="chip">Klinik</span></h3>
+              <p>Hekim; ölçü veya dijital ölçü dosyalarını, vaka formunu ve notlarını laboratuvara iletir.</p>
+            </div>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__num" aria-hidden="true">2</span>
+            <div class="timeline__body">
+              <h3 class="timeline__title">İnceleme ve planlama <span class="chip chip--alt">Birlikte</span></h3>
+              <p>Gelen bilgiler incelenir; eksik veya belirsiz noktalar için hekimle iletişime geçilir ve iş planı oluşturulur.</p>
+            </div>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__num" aria-hidden="true">3</span>
+            <div class="timeline__body">
+              <h3 class="timeline__title">Dijital tasarım ve üretim <span class="chip chip--lab">Laboratuvar</span></h3>
+              <p>Restorasyon dijital ortamda tasarlanır ve planlanan malzeme ile üretim aşamasına geçilir.</p>
+            </div>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__num" aria-hidden="true">4</span>
+            <div class="timeline__body">
+              <h3 class="timeline__title">Kalite kontrol <span class="chip chip--lab">Laboratuvar</span></h3>
+              <p>Tamamlanan çalışma; form, uyum ve vaka notları açısından kontrol edilir.</p>
+            </div>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__num" aria-hidden="true">5</span>
+            <div class="timeline__body">
+              <h3 class="timeline__title">Paketleme ve teslimat <span class="chip chip--lab">Laboratuvar</span></h3>
+              <p>Çalışma hijyenik biçimde paketlenir ve kliniğe ulaştırılmak üzere planlanan yöntemle gönderilir.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== SSS ===================== -->
+    <section class="section section--soft" id="sss" data-spy="iletisim" aria-labelledby="sss-title">
+      <div class="container faq">
+        <div class="faq__intro">
+          <p class="eyebrow eyebrow--light">Sıkça Sorulan Sorular</p>
+          <h2 class="section-title" id="sss-title">Merak ettikleriniz</h2>
+          <p class="lead">Laboratuvarla çalışmaya başlamadan önce sık sorulan soruların kısa yanıtları. Aradığınızı bulamazsanız bize yazın.</p>
+          <a class="btn btn--dark btn--lg" href="#iletisim">Bize Ulaşın</a>
+        </div>
+
+        <div class="accordion" id="faq-list">
+          <div class="accordion__item">
+            <h3 class="accordion__heading">
+              <button class="accordion__trigger" type="button" id="faq-q1" aria-expanded="false" aria-controls="faq-a1">
+                <span>Laboratuvara nasıl iş gönderilir?</span>
+                <svg class="icon accordion__icon" aria-hidden="true"><use href="#icon-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-a1" role="region" aria-labelledby="faq-q1">
+              <div class="accordion__inner">
+                <p>Vaka formunuzu, notlarınızı ve ölçünüzü (fiziksel ölçü veya dijital dosya) laboratuvara iletebilirsiniz. Güncel gönderim yöntemi ve vaka formu için lütfen iletişim bilgilerimizden bize ulaşın; başlamak için iletişim formunu da kullanabilirsiniz.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3 class="accordion__heading">
+              <button class="accordion__trigger" type="button" id="faq-q2" aria-expanded="false" aria-controls="faq-a2">
+                <span>Hangi dosya formatları kabul edilir?</span>
+                <svg class="icon accordion__icon" aria-hidden="true"><use href="#icon-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-a2" role="region" aria-labelledby="faq-q2">
+              <div class="accordion__inner">
+                <p>Dijital ölçüler genellikle STL, PLY veya OBJ gibi yaygın 3B dosya formatlarında paylaşılır. Tarayıcı üreticilerine özgü formatlar için kabul edilen türlerin laboratuvar tarafından teyit edilmesi gerekir; dosya göndermeden önce bizimle iletişime geçmenizi öneririz.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3 class="accordion__heading">
+              <button class="accordion__trigger" type="button" id="faq-q3" aria-expanded="false" aria-controls="faq-a3">
+                <span>Sipariş süreci nasıl işler?</span>
+                <svg class="icon accordion__icon" aria-hidden="true"><use href="#icon-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-a3" role="region" aria-labelledby="faq-q3">
+              <div class="accordion__inner">
+                <p>Genel akış şöyledir: vaka gönderimi, inceleme ve planlama, dijital tasarım ve üretim, kalite kontrol, paketleme ve teslimat. Ayrıntılar için <a class="text-link" href="#is-akisi">İş Akışı</a> bölümüne bakabilirsiniz. Vakaya özgü adımlar ve onay noktaları hekimle birlikte belirlenir.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3 class="accordion__heading">
+              <button class="accordion__trigger" type="button" id="faq-q4" aria-expanded="false" aria-controls="faq-a4">
+                <span>Teslimat süreci nasıl planlanır?</span>
+                <svg class="icon accordion__icon" aria-hidden="true"><use href="#icon-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-a4" role="region" aria-labelledby="faq-q4">
+              <div class="accordion__inner">
+                <p>Teslim süresi; restorasyon türüne, malzemeye, vakanın karmaşıklığına ve prova gereksinimine göre değişir. Kesin teslim tarihi, vaka incelendikten sonra hekimle paylaşılır. Teslimat yöntemleri ve süreleri hakkında güncel bilgi için bizimle iletişime geçin.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3 class="accordion__heading">
+              <button class="accordion__trigger" type="button" id="faq-q5" aria-expanded="false" aria-controls="faq-a5">
+                <span>Teklif nasıl alınır?</span>
+                <svg class="icon accordion__icon" aria-hidden="true"><use href="#icon-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-a5" role="region" aria-labelledby="faq-q5">
+              <div class="accordion__inner">
+                <p>İletişim bölümündeki formda “Teklif Talebi” seçeneğini işaretleyip hizmet kategorisini ve vaka bilgilerinizi yazabilirsiniz. Fiyat bilgisi vaka ayrıntılarına göre ayrıca paylaşılır. <a class="text-link" href="#iletisim" data-quote>Teklif formuna git</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3 class="accordion__heading">
+              <button class="accordion__trigger" type="button" id="faq-q6" aria-expanded="false" aria-controls="faq-a6">
+                <span>Siparişimin durumunu nasıl öğrenebilirim?</span>
+                <svg class="icon accordion__icon" aria-hidden="true"><use href="#icon-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-a6" role="region" aria-labelledby="faq-q6">
+              <div class="accordion__inner">
+                <p>Sipariş durumu hakkında telefon veya e-posta ile laboratuvara ulaşabilirsiniz. Çevrimiçi sipariş takibinin kapsamı, Online Sipariş Girişi sistemi devreye alındığında netleşecektir; o zamana kadar iletişim kanallarımızdan bilgi alabilirsiniz.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== İLETİŞİM ===================== -->
+    <section class="section section--dark" id="iletisim" data-spy="iletisim" aria-labelledby="iletisim-title">
+      <div class="container contact">
+        <div class="contact__info">
+          <p class="eyebrow">İletişim</p>
+          <h2 class="section-title section-title--invert" id="iletisim-title">Bizimle iletişime geçin</h2>
+          <p class="lead lead--invert">Vakalarınız, hizmet kategorilerimiz veya teklif talepleriniz için bize yazın. Mesajınızı incelemek üzere almaktan memnuniyet duyarız.</p>
+
+          <!-- Placeholder details: replace with real business information (see README). -->
+          <ul class="info-list">
+            <li class="info-list__item">
+              <svg class="icon info-list__icon" aria-hidden="true"><use href="#icon-pin"/></svg>
+              <div>
+                <span class="info-list__label">Adres</span>
+                <span class="info-list__value">[Mahalle, Cadde, No – İlçe / Şehir]</span>
+              </div>
+            </li>
+            <li class="info-list__item">
+              <svg class="icon info-list__icon" aria-hidden="true"><use href="#icon-phone"/></svg>
+              <div>
+                <span class="info-list__label">Telefon</span>
+                <a class="info-list__value info-list__link" href="tel:+900000000000">[+90&nbsp;900&nbsp;000&nbsp;00&nbsp;00]</a>
+              </div>
+            </li>
+            <li class="info-list__item">
+              <svg class="icon info-list__icon" aria-hidden="true"><use href="#icon-mail"/></svg>
+              <div>
+                <span class="info-list__label">E-posta</span>
+                <a class="info-list__value info-list__link" href="mailto:info@example.com" data-contact-email>info@[alanadiniz].com</a>
+              </div>
+            </li>
+            <li class="info-list__item">
+              <svg class="icon info-list__icon" aria-hidden="true"><use href="#icon-clock"/></svg>
+              <div>
+                <span class="info-list__label">Çalışma saatleri</span>
+                <span class="info-list__value">[Pzt – Cmt 09:00 – 18:00]</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact__card">
+          <form class="form" id="contact-form" novalidate aria-labelledby="form-title">
+            <h3 class="form__title" id="form-title">İletişim ve teklif formu</h3>
+
+            <fieldset class="segmented">
+              <legend class="sr-only">Talep türü</legend>
+              <label class="segmented__option">
+                <input type="radio" name="requestType" value="Genel iletişim" checked>
+                <span>Genel İletişim</span>
+              </label>
+              <label class="segmented__option">
+                <input type="radio" name="requestType" value="Teklif talebi">
+                <span>Teklif Talebi</span>
+              </label>
+            </fieldset>
+
+            <div class="form__grid">
+              <div class="field">
+                <label class="field__label" for="c-name">Ad Soyad <span class="field__req" aria-hidden="true">*</span></label>
+                <input class="field__control" id="c-name" name="name" type="text" autocomplete="name" required aria-describedby="c-name-error" data-msg-required="Lütfen adınızı ve soyadınızı yazın.">
+                <p class="field__error" id="c-name-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="c-clinic">Klinik / Firma Adı</label>
+                <input class="field__control" id="c-clinic" name="clinic" type="text" autocomplete="organization">
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="c-email">E-posta <span class="field__req" aria-hidden="true">*</span></label>
+                <input class="field__control" id="c-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="c-email-error" data-msg-required="Lütfen e-posta adresinizi yazın." data-msg-invalid="Geçerli bir e-posta adresi girin (örn. ad@ornek.com).">
+                <p class="field__error" id="c-email-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="c-phone">Telefon</label>
+                <input class="field__control" id="c-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+()\s\-]{7,20}" aria-describedby="c-phone-error" data-msg-invalid="Geçerli bir telefon numarası girin (yalnızca rakam, +, boşluk, parantez veya tire).">
+                <p class="field__error" id="c-phone-error" hidden></p>
+              </div>
+
+              <div class="field field--full" data-quote-only hidden>
+                <label class="field__label" for="c-category">Hizmet Kategorisi <span class="field__req" aria-hidden="true">*</span></label>
+                <select class="field__control" id="c-category" name="category" aria-describedby="c-category-error" data-msg-required="Lütfen teklif almak istediğiniz kategoriyi seçin." disabled>
+                  <option value="">Kategori seçin</option>
+                  <option value="zirkonyum">Zirkonyum Restorasyonlar</option>
+                  <option value="emax">E-max Restorasyonlar</option>
+                  <option value="metal-porselen">Metal Destekli Porselen Restorasyonlar</option>
+                  <option value="implant">İmplant Üstü Protezler</option>
+                  <option value="hareketli-protez">Hareketli Protezler</option>
+                  <option value="gecici">Geçici Restorasyonlar</option>
+                  <option value="diger">Diğer / Emin değilim</option>
+                </select>
+                <p class="field__error" id="c-category-error" hidden></p>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="c-subject">Konu <span class="field__req" aria-hidden="true">*</span></label>
+                <input class="field__control" id="c-subject" name="subject" type="text" required aria-describedby="c-subject-error" data-msg-required="Lütfen bir konu başlığı yazın.">
+                <p class="field__error" id="c-subject-error" hidden></p>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="c-message">Mesajınız <span class="field__req" aria-hidden="true">*</span></label>
+                <textarea class="field__control field__control--area" id="c-message" name="message" rows="5" required minlength="10" aria-describedby="c-message-error" data-msg-required="Lütfen mesajınızı yazın." data-msg-short="Mesajınız en az 10 karakter olmalıdır."></textarea>
+                <p class="field__error" id="c-message-error" hidden></p>
+              </div>
+
+              <div class="field field--full">
+                <label class="check">
+                  <input type="checkbox" id="c-consent" name="consent" required aria-describedby="c-consent-error" data-msg-required="Devam etmek için onay kutusunu işaretleyin.">
+                  <span>Kişisel verilerimin, talebimin yanıtlanması amacıyla işlenmesini kabul ediyorum. <span class="field__req" aria-hidden="true">*</span></span>
+                </label>
+                <p class="field__error" id="c-consent-error" hidden></p>
+              </div>
+            </div>
+
+            <div class="form-status" id="contact-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
+
+            <div class="form__actions">
+              <button class="btn btn--dark btn--lg" type="submit" id="contact-submit">
+                <span class="btn__text">Gönder</span>
+                <span class="btn__spinner" aria-hidden="true"></span>
+              </button>
+              <p class="form__hint">* ile işaretli alanlar zorunludur.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="site-footer__main">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#ana-sayfa" aria-label="SeoDental – sayfanın başına dön">
+            <img class="brand__logo brand__logo--footer" src="assets/images/seodental-logo.png" alt="SeoDental" width="1107" height="800" loading="lazy">
+          </a>
+          <p>Diş hekimlerine ve teknisyenlerine yönelik, dijital iş akışıyla çalışan diş protez laboratuvarı.</p>
+        </div>
+
+        <nav class="footer-col" aria-labelledby="footer-nav-title">
+          <h2 class="footer-col__title" id="footer-nav-title">Hızlı Bağlantılar</h2>
+          <ul>
+            <li><a href="#ana-sayfa">Ana Sayfa</a></li>
+            <li><a href="#kurumsal">Kurumsal</a></li>
+            <li><a href="#urunlerimiz">Ürünlerimiz</a></li>
+            <li><a href="#teknoloji">Teknoloji</a></li>
+            <li><a href="#sss">Sıkça Sorulan Sorular</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-labelledby="footer-products-title">
+          <h2 class="footer-col__title" id="footer-products-title">Hizmetlerimiz</h2>
+          <ul>
+            <li><a href="#urun-zirkonyum">Zirkonyum Restorasyonlar</a></li>
+            <li><a href="#urun-emax">E-max Restorasyonlar</a></li>
+            <li><a href="#urun-metal-porselen">Metal Destekli Porselen</a></li>
+            <li><a href="#urun-implant">İmplant Üstü Protezler</a></li>
+            <li><a href="#urun-hareketli-protez">Hareketli Protezler</a></li>
+            <li><a href="#urun-gecici">Geçici Restorasyonlar</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h2 class="footer-col__title">İletişim</h2>
+          <ul class="footer-contact">
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>
+              <span>[Mahalle, Cadde, No – İlçe / Şehir]</span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>
+              <a href="tel:+900000000000">[+90&nbsp;900&nbsp;000&nbsp;00&nbsp;00]</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg>
+              <a href="mailto:info@example.com" data-contact-email>info@[alanadiniz].com</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg>
+              <span>[Pzt – Cmt 09:00 – 18:00]</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer__bar">
+      <div class="container site-footer__bar-inner">
+        <p>© <span data-year>2026</span> SeoDental. Tüm hakları saklıdır.</p>
+        <button class="back-to-top" type="button" data-scroll-top>
+          <span>Yukarı Çık</span>
+          <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== DIALOGS ===================== -->
+
+  <!-- Online order portal: sign in / register / account (talks to the backend in /server) -->
+  <dialog class="dialog" id="login-dialog" aria-labelledby="login-title">
+    <div class="dialog__panel">
+      <button class="dialog__close" type="button" data-dialog-close aria-label="Pencereyi kapat">
+        <svg class="icon" aria-hidden="true"><use href="#icon-close"/></svg>
+      </button>
+
+      <div class="dialog__header">
+        <span class="dialog__badge"><svg class="icon" aria-hidden="true"><use href="#icon-lock"/></svg></span>
+        <h2 class="dialog__title" id="login-title">Online Sipariş Girişi</h2>
+        <p class="dialog__lead" id="auth-lead">Sipariş paneline erişmek için giriş yapın veya yeni bir hesap oluşturun.</p>
+      </div>
+
+      <!-- Signed-out views -->
+      <div data-auth-view="guest">
+        <fieldset class="segmented" id="auth-tabs">
+          <legend class="sr-only">Hesap işlemi</legend>
+          <label class="segmented__option">
+            <input type="radio" name="authTab" value="login" checked>
+            <span>Giriş Yap</span>
+          </label>
+          <label class="segmented__option">
+            <input type="radio" name="authTab" value="register">
+            <span>Kayıt Ol</span>
+          </label>
+        </fieldset>
+
+        <form class="form" id="login-form" novalidate data-auth-panel="login">
+          <div class="field">
+            <label class="field__label" for="l-user">E-posta veya telefon numarası</label>
+            <input class="field__control" id="l-user" name="identifier" type="text" autocomplete="username" required data-validate="identifier" aria-describedby="l-user-error" data-msg-required="Lütfen e-posta adresinizi veya telefon numaranızı yazın." data-msg-invalid="Geçerli bir e-posta adresi veya telefon numarası girin.">
+            <p class="field__error" id="l-user-error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="l-pass">Şifre</label>
+            <div class="field__wrap">
+              <input class="field__control field__control--toggle" id="l-pass" name="password" type="password" autocomplete="current-password" required aria-describedby="l-pass-error" data-msg-required="Lütfen şifrenizi yazın.">
+              <button class="field__toggle" type="button" data-toggle-password="l-pass" aria-pressed="false" aria-label="Şifreyi göster">
+                <svg class="icon icon--show" aria-hidden="true"><use href="#icon-eye"/></svg>
+                <svg class="icon icon--hide" aria-hidden="true"><use href="#icon-eye-off"/></svg>
+              </button>
+            </div>
+            <p class="field__error" id="l-pass-error" hidden></p>
+          </div>
+
+          <div class="form-status" id="login-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
+
+          <button class="btn btn--dark btn--lg btn--block" type="submit" id="login-submit">
+            <span class="btn__text">Giriş Yap</span>
+            <span class="btn__spinner" aria-hidden="true"></span>
+          </button>
+        </form>
+
+        <form class="form" id="register-form" novalidate hidden data-auth-panel="register">
+          <fieldset class="segmented segmented--compact" id="reg-method">
+            <legend class="sr-only">Kayıt yöntemi</legend>
+            <label class="segmented__option">
+              <input type="radio" name="method" value="email" checked>
+              <span>E-posta ile</span>
+            </label>
+            <label class="segmented__option">
+              <input type="radio" name="method" value="phone">
+              <span>Telefon ile</span>
+            </label>
+          </fieldset>
+
+          <div class="field">
+            <label class="field__label" for="r-name">Ad Soyad</label>
+            <input class="field__control" id="r-name" name="fullName" type="text" autocomplete="name" required minlength="3" maxlength="100" aria-describedby="r-name-error" data-msg-required="Lütfen adınızı ve soyadınızı yazın." data-msg-short="Lütfen adınızı ve soyadınızı yazın.">
+            <p class="field__error" id="r-name-error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="r-ident" id="r-ident-label">E-posta adresi</label>
+            <input class="field__control" id="r-ident" name="identifier" type="email" inputmode="email" autocomplete="email" required maxlength="254" aria-describedby="r-ident-error" data-msg-required="Lütfen e-posta adresinizi yazın." data-msg-invalid="Lütfen geçerli bir e-posta adresi girin.">
+            <p class="field__error" id="r-ident-error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="r-pass">Şifre</label>
+            <div class="field__wrap">
+              <input class="field__control field__control--toggle" id="r-pass" name="password" type="password" autocomplete="new-password" required minlength="10" maxlength="128" aria-describedby="r-pass-hint r-pass-error" data-msg-required="Lütfen bir şifre belirleyin." data-msg-short="Şifre en az 10 karakter olmalıdır." data-validate="password">
+              <button class="field__toggle" type="button" data-toggle-password="r-pass" aria-pressed="false" aria-label="Şifreyi göster">
+                <svg class="icon icon--show" aria-hidden="true"><use href="#icon-eye"/></svg>
+                <svg class="icon icon--hide" aria-hidden="true"><use href="#icon-eye-off"/></svg>
+              </button>
+            </div>
+            <p class="field__error" id="r-pass-error" hidden></p>
+            <p class="field__hint" id="r-pass-hint">En az 10 karakter; en az bir harf ve bir rakam içermelidir.</p>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="r-pass2">Şifre (tekrar)</label>
+            <div class="field__wrap">
+              <input class="field__control field__control--toggle" id="r-pass2" name="passwordConfirm" type="password" autocomplete="new-password" required maxlength="128" aria-describedby="r-pass2-error" data-validate="match" data-match="r-pass" data-msg-required="Lütfen şifrenizi tekrar yazın." data-msg-invalid="Şifreler eşleşmiyor.">
+              <button class="field__toggle" type="button" data-toggle-password="r-pass2" aria-pressed="false" aria-label="Şifreyi göster">
+                <svg class="icon icon--show" aria-hidden="true"><use href="#icon-eye"/></svg>
+                <svg class="icon icon--hide" aria-hidden="true"><use href="#icon-eye-off"/></svg>
+              </button>
+            </div>
+            <p class="field__error" id="r-pass2-error" hidden></p>
+          </div>
+
+          <div class="form-status" id="register-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
+
+          <button class="btn btn--dark btn--lg btn--block" type="submit" id="register-submit">
+            <span class="btn__text">Kayıt Ol</span>
+            <span class="btn__spinner" aria-hidden="true"></span>
+          </button>
+        </form>
+
+        <p class="dialog__foot">Yardıma mı ihtiyacınız var? <button class="link-button" type="button" data-dialog-contact>Bize ulaşın</button></p>
+      </div>
+
+      <!-- Signed-in view -->
+      <div data-auth-view="account" hidden>
+        <dl class="account">
+          <div class="account__row"><dt>Ad Soyad</dt><dd id="acc-name"></dd></div>
+          <div class="account__row" id="acc-email-row" hidden><dt>E-posta</dt><dd><span id="acc-email"></span> <span class="badge" id="acc-email-badge"></span></dd></div>
+          <div class="account__row" id="acc-phone-row" hidden><dt>Telefon</dt><dd><span id="acc-phone"></span> <span class="badge" id="acc-phone-badge"></span></dd></div>
+        </dl>
+
+        <form class="form account__verify" id="verify-form" novalidate hidden>
+          <p class="account__verify-text" id="verify-text"></p>
+          <div class="field">
+            <label class="field__label" for="v-code">Doğrulama kodu</label>
+            <input class="field__control" id="v-code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" required aria-describedby="v-code-error" data-msg-required="Lütfen 6 haneli kodu girin." data-msg-invalid="Kod 6 haneli olmalıdır." data-validate="code">
+            <p class="field__error" id="v-code-error" hidden></p>
+          </div>
+          <div class="form-status" id="verify-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
+          <div class="account__verify-actions">
+            <button class="btn btn--dark btn--sm" type="submit" id="verify-submit">
+              <span class="btn__text">Doğrula</span>
+              <span class="btn__spinner" aria-hidden="true"></span>
+            </button>
+            <button class="link-button" type="button" id="verify-resend">Yeni kod gönder</button>
+          </div>
+        </form>
+
+        <div class="form-status" id="account-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
+
+        <button class="btn btn--ghost btn--lg btn--block" type="button" id="logout-button">
+          <span class="btn__text">Çıkış Yap</span>
+          <span class="btn__spinner" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Product detail (content is cloned from the card's <template>) -->
+  <dialog class="dialog dialog--wide" id="product-dialog" aria-labelledby="product-dialog-title">
+    <div class="dialog__panel dialog__panel--split">
+      <button class="dialog__close" type="button" data-dialog-close aria-label="Pencereyi kapat">
+        <svg class="icon" aria-hidden="true"><use href="#icon-close"/></svg>
+      </button>
+
+      <figure class="dialog__media">
+        <img id="product-dialog-image" src="assets/images/products/zirkonyum.svg" alt="" width="480" height="360">
+      </figure>
+
+      <div class="dialog__content">
+        <p class="eyebrow eyebrow--light">Hizmet kategorisi</p>
+        <h2 class="dialog__title dialog__title--left" id="product-dialog-title">Ürün</h2>
+        <div class="dialog__body" id="product-dialog-body"></div>
+        <p class="note">Malzeme ve restorasyon seçimi diş hekiminin klinik değerlendirmesine bağlıdır. Fiyat ve süre bilgisi vaka ayrıntılarına göre ayrıca paylaşılır.</p>
+        <div class="dialog__actions">
+          <button class="btn btn--dark" type="button" id="product-dialog-quote">Bu kategori için teklif alın</button>
+          <button class="btn btn--ghost" type="button" data-dialog-close>Kapat</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+</body>
+</html>

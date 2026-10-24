@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#143674"/><stop offset="1" stop-color="#0b2351"/></linearGradient>
+  <radialGradient id="glow" cx=".5" cy=".45" r=".5"><stop offset="0" stop-color="#3f86e6" stop-opacity=".38"/><stop offset="1" stop-color="#3f86e6" stop-opacity="0"/></radialGradient>
+  <linearGradient id="enamel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#eef3fa"/><stop offset="1" stop-color="#c9d6e8"/></linearGradient>
+  <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7cc0ff"/><stop offset=".5" stop-color="#1f6fd1"/><stop offset="1" stop-color="#0d3f93"/></linearGradient>
+  <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1f4f8"/><stop offset=".45" stop-color="#9aa6b6"/><stop offset="1" stop-color="#5d6877"/></linearGradient>
+  <linearGradient id="gum" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4b9c0"/><stop offset="1" stop-color="#d98c98"/></linearGradient>
+  <radialGradient id="shadow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#000" stop-opacity=".35"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+
+</defs>
+<rect width="480" height="360" fill="url(#bg)"/>
+<rect width="480" height="360" fill="url(#glow)"/>
+<circle cx="240" cy="176" r="138" fill="none" stroke="#fff" stroke-opacity=".12"/>
+<circle cx="240" cy="176" r="104" fill="none" stroke="#fff" stroke-opacity=".07"/>
+<ellipse cx="240" cy="276" rx="104" ry="9" fill="url(#shadow)"/>
+<g transform="translate(240 170) scale(1.6)">
+  <path d="M-62,-8 C-70,-44 -46,-70 -20,-64 C-8,-61 8,-61 20,-64 C46,-70 70,-44 62,-8 C58,16 50,34 36,36 C24,38 20,22 0,22 C-20,22 -24,38 -36,36 C-50,34 -58,16 -62,-8 Z" fill="url(#enamel)" stroke="url(#rim)" stroke-width="4.5" stroke-linejoin="round"/>
+  <path d="M-46,10 C-50,-18 -34,-40 -14,-40 C-6,-38 6,-38 14,-40 C34,-40 50,-18 46,10 C43,24 38,34 28,35 C20,36 16,24 0,24 C-16,24 -20,36 -28,35 C-38,34 -43,24 -46,10 Z" fill="url(#metal)" stroke="#e9eef5" stroke-width="2"/>
+  <path d="M-30,-24 C-20,-34 -6,-32 0,-26" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-opacity=".85"/>
+</g>
+</svg>

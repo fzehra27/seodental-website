@@ -1,0 +1,12 @@
+{
+  "name": "seodental-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SeoDental website with registration, login and account area (no runtime dependencies)",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "migrate": "node server/migrate.js",
+    "start": "node server/index.js",
+    "test": "node --test test/auth.test.js test/delivery.test.js"
+  }
+}
